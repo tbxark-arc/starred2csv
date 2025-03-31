@@ -1,3 +1,3 @@
-module github.com/TBXark/starred2csv
+module github.com/tbxark-arc/starred2csv
 
 go 1.22

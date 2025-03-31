@@ -5,7 +5,7 @@ Export your starred repositories from GitHub to a CSV file.
 ### Installation
 
 ```bash
-go get -u github.com/TBXark/starred2csv
+go install github.com/tbxark-arc/starred2csv@latest
 ```
 
 ### Usage
