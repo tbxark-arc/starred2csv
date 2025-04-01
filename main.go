@@ -32,6 +32,10 @@ func main() {
 		"forks_count",
 		"topics",
 		"language",
+		"is_private",
+		"is_fork",
+		"is_template",
+		"is_archived",
 		"created_at",
 		"updated_at",
 	}, ","))
@@ -53,6 +57,10 @@ func main() {
 				fmt.Sprintf("%d", repo.ForksCount),
 				encodeCSVComment(strings.Join(repo.Topics, ",")),
 				repo.Language,
+				fmt.Sprintf("%t", repo.Private),
+				fmt.Sprintf("%t", repo.Fork),
+				fmt.Sprintf("%t", repo.IsTemplate),
+				fmt.Sprintf("%t", repo.Archived),
 				repo.CreatedAt.Format(time.RFC3339),
 				repo.UpdatedAt.Format(time.RFC3339),
 			}, ","))
